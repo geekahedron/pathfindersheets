@@ -1,0 +1,15 @@
+// get class ranks
+var level = 1;
+var classname = this.getField("class"+level).value.toLowerCase();
+
+switch(classname) {
+  case "cleric":
+    event.value = 2;
+    break;
+  case "barbarian":
+    event.value = 4;
+    break;
+  case "bard":
+    event.value = 6;
+    break;
+}
